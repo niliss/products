@@ -1,7 +1,11 @@
 <%= form_for :product, url: products_path do |f| %>
-  <%= f.text_field :name %>
-  <%= f.text_field :description %>
-  <%= f.number_field :price %>
-  <%= f.check_box :published%>
+  <%= f.label :name %>
+  <%= f.text_field :name %><br>
+  <%= f.label :description %>
+  <%= f.text_field :description %><br>
+  <%= f.label :price %>
+  <%= f.number_field :price %><br>
+  <%= f.label :published %>
+  <%= f.check_box :published%><br>
   <%= f.submit %>
 <% end %>
