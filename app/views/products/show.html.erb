@@ -1,0 +1,23 @@
+<h1> this is show </h1>
+
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Description</th>
+		<th>Price</th>
+		<th>Published</th>
+	</tr>
+	
+	<tr>
+		<td><%= @products.name %></td>
+		<td><%= @products.description %></td>
+		<td><%= @products.price %></td>
+		<td><%= @products.published %></td>
+	</tr>
+
+	<h1>If you are ready to edit this click <%= link_to "here", edit_product_path  %></h1>
+	
+	 	
+</table>
+		

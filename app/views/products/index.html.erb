@@ -1,2 +1,26 @@
-<h1>Products#index</h1>
-<p>Find me in app/views/products/index.html.erb</p>
+<h1>All the Products</h1>
+<h3>Adding a Product?</h3>
+<p>Click on The link that I am going to give you</p>
+<p>When I figure out...</p>
+<p>The Link Tag in Rails...</p>
+
+<%= link_to "CLICK HERE", new_product_path  %>
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Description</th>
+		<th>Price</th>
+		<th>Published</th>
+	</tr>
+	<%  @products.each do |product| %> 
+	<tr>
+		<td><%= product.name %></td>
+		<td><%= product.description %></td>
+		<td><%= product.price %></td>
+		<td><%= product.published %></td>
+	</tr>
+	<% end %> 
+	 	
+</table>
+

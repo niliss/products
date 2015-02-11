@@ -3,11 +3,11 @@
 one:
   name: MyString
   description: MyString
-  price: 1.5
+  price: 1
   published: false
 
 two:
   name: MyString
   description: MyString
-  price: 1.5
+  price: 1
   published: false
